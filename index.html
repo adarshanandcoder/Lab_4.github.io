@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <div class="main-heading">
+                <h1>Sign Up</h1>
+                <hr>
+            </div>
+            <div class="content">
+                <div class="name">
+                    <p>First Name : <input type="text" name="First_name" id="First_name" placeholder="Enter your First Name"></p>
+                    <p>Last Name : <input type="text" name="Last_name" id="Last_name" placeholder="Enter your Last Name"></p>
+                </div>
+                <div class="emailid">
+                    <p>User Name : <input type="email" name="email" id="email" placeholder="Enter your username">
+                </div>
+                <div class="number">
+                    <p>
+                        Telephone No. : <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number">
+                    </p>
+                        <!-- load jquery library -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <!-- load plugin -->
+                        <script src="js/intlTelInput.js"></script>
+                        <script>
+                            $('#phone').intlTelInput;
+                        </script>
+                   
+                </div>
+                <div class="password">
+                    <p>Password : <input type="password" name="password" id="password" placeholder="Enter Password"></p>
+                    <p>Confirm Password : <input type="password" name="repassword" id="repassword" placeholder="Re-Enter Password"></p>    
+                </div>
+                <div class="button">
+                    Submit
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
